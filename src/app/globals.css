@@ -1,0 +1,112 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("../../public/styles/background.css");
+@import url("../../public/styles/sidebar.css");
+@import url("../../public/icons/boxicons/css/boxicons.min.css");
+
+@font-face {
+  font-family: "poppins";
+  src: url("/fonts/Poppins-Medium.ttf");
+}
+
+* {
+  font-family: "poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --body-color: #fff;
+  --title-page-color: linear-gradient(90deg, #0d9488 0%, #56bfb5 100%);
+  --sidebar-color: #fff;
+  --primary-color: #0d9488;
+  --primary-color-light: #f6f5ff;
+  --toggle-color: #ddd;
+  --text-color: #707070;
+  --white-text-color: #fff;
+  --warning-color: #fd5732;
+  --primary-dark-color: #15192c;
+
+  --primary-clear: #0d9488;
+  --primary-dull: #1db3a6;
+  --primary-visible: #c8ffff;
+  --accent-clear: #00bfff;
+  --accent-dull: #00619a;
+  --clear: #333333;
+  --dull: #5c5c5c;
+  --duller: #cccccc;
+  --tw-gradient-from: #019b98;
+  --tw-gradient-to: #55ccc9;
+  --danger-color: #dd0025;
+
+  --tran-02: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.4s ease;
+  --tran-05: all 0.5s ease;
+}
+
+body {
+  height: 100vh;
+  background: var(--body-color);
+  font-size: 14px;
+  /* transition: var(--tran-05); */
+}
+
+body.dark {
+  --body-color: #18191a;
+  --sidebar-color: #242526;
+  --primary-color: #3a3b3c;
+  --primary-color-light: #3a3b3c;
+  --toggle-color: #fff;
+  --text-color: #ccc;
+  transition: var(--tran-02);
+}
+
+body.dark input {
+  color: var(--text-color);
+}
+
+button {
+  transition: var(--tran-03);
+}
+
+.content-fulll {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  transition: var(--tran-05);
+}
+.content .navbar {
+  padding: 8px 32px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background: var(--title-page-color);
+}
+
+.content .navbar .title {
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--white-text-color);
+}
+
+.content {
+  position: relative;
+  height: 100vh;
+  left: 250px;
+  width: calc(100% - 250px);
+  transition: var(--tran-05);
+}
+
+.main-content {
+  color: var(--text-color);
+  background: var(--body-color);
+  transition: var(--tran-05);
+}
+
+.breadcrumb {
+  color: var(--text-color);
+}
