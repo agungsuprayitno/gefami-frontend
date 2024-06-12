@@ -16,10 +16,16 @@ next, create env files:
 then set variable NEXT_PUBLIC_BASE_URL
 -   for example, NEXT_PUBLIC_BASE_URL="http://localhost:3000"
 
-Next, run the development server:
+Next, install dependencies:
 
 ```bash
 npm install
+
+```
+
+Next, run the development server:
+
+```bash
 npm run dev
 # or
 yarn dev
